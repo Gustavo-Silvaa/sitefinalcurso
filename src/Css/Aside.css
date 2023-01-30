@@ -1,0 +1,16 @@
+#container aside {
+    background-color: rgb(70, 62, 62);
+    width: 20%;
+    height: 25em;
+    float: right;
+    list-style-type: none;
+    text-align: center;
+    padding: 14px;
+    margin: 2% 3%;
+    border-radius: 10px;
+};
+
+#container aside a {
+    text-decoration: none;
+    
+}
