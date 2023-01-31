@@ -1,16 +1,32 @@
 #container aside {
-    background-color: rgb(70, 62, 62);
-    width: 20%;
-    height: 25em;
-    float: right;
-    list-style-type: none;
-    text-align: center;
-    padding: 14px;
-    margin: 2% 3%;
-    border-radius: 10px;
-};
-
-#container aside a {
-    text-decoration: none;
-    
+  background-color: rgba(78, 36, 112, 0.637);
+  width: 20%;
+  height: 25em;
+  float: right;
+  text-align: center;
+  margin: 2% 3% 0 0;
+  border-radius: 5px;
+  color: rgb(206, 200, 200);
+  text-decoration: none;
 }
+
+aside p {
+  padding: 5px;
+}
+
+aside img {
+  width: 130px;
+  height: 130px;
+}
+
+/* #container aside:hover {
+  background-color: rgb(70, 62, 62);
+  width: 20%;
+  height: 25em;
+  float: right;
+  text-align: center;
+  margin: 2% 10px 0;
+  border-radius: 10px;
+  transition: 1s;
+  color: white;
+} */

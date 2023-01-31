@@ -1,16 +1,21 @@
 import React from "react";
+import "../Css/Aside.css";
 
+import gif from "../img/gif1.gif";
 
 function Aside() {
-    return(
-        <aside>
-           {/* <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">JavaScrip</a></li>
-            <li><a href="#">React</a></li>
-            <li><a href="#">Angular</a></li> */}
-        </aside>
-    );
-};
+  return (
+    <aside>
+      <h1>Site em React</h1>
+      <p>
+        Site feito em React com sub-menus, estilizado em Css, no sub-menu
+        comentários cadastro de Nome, E-mail e uma opinião sua.
+      </p>{" "}
+      <br />
+      <p>Agradeço sua atenção !!</p>
+      <img src={gif} />
+    </aside>
+  );
+}
 
 export default Aside;
