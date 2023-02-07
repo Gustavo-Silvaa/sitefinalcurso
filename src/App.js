@@ -11,6 +11,8 @@ import Home from "./Pages/Home";
 import Comment from "./Pages/Comment";
 import About from "./Pages/About";
 
+import "./Css/Responsive.css";
+
 function App() {
   return (
     <BrowserRouter>

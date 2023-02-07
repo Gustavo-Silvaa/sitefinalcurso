@@ -10,8 +10,7 @@ function Aside() {
       <p>
         Site feito em React com sub-menus, estilizado em Css, no sub-menu
         comentários cadastro de Nome, E-mail e uma opinião sua.
-      </p>{" "}
-      <br />
+      </p>
       <p>Agradeço sua atenção !!</p>
       <img src={gif} />
     </aside>

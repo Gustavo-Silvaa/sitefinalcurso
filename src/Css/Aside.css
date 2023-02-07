@@ -1,10 +1,10 @@
 #container aside {
   background-color: rgba(78, 36, 112, 0.637);
-  width: 20%;
+  width: 180px;
   height: 25em;
-  float: right;
+  float: left;
   text-align: center;
-  margin: 2% 3% 0 0;
+  margin: 2% 0 0 0;
   border-radius: 5px;
   color: rgb(206, 200, 200);
   text-decoration: none;
@@ -18,15 +18,3 @@ aside img {
   width: 130px;
   height: 130px;
 }
-
-/* #container aside:hover {
-  background-color: rgb(70, 62, 62);
-  width: 20%;
-  height: 25em;
-  float: right;
-  text-align: center;
-  margin: 2% 10px 0;
-  border-radius: 10px;
-  transition: 1s;
-  color: white;
-} */
