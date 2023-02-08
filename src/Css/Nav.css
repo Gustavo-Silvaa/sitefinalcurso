@@ -1,21 +1,20 @@
 #container nav {
-  background-color: rgba(78, 36, 112, 0.637);
-  height: 25px;
-  margin-top: 10px;
+  grid-area: nav;
+  height: 22px;
+  background-color: rgba(90, 48, 124, 0.637);
   border-radius: 10px;
   text-align: center;
-  padding: 5px;
+  padding: 9px;
 }
+
 #bar {
-  width: 200px;
-  color: rgb(204, 198, 198);
-  margin: 20px;
   text-decoration: none;
-  padding-top: 5px;
+  color: white;
+  margin-left: 14px;
+  padding: 5px;
 }
 
 #bar:hover {
-  color: rgb(125, 252, 252);
-  font-size: 18px;
-  transition: 1s;
+  background-color: rgba(159, 109, 201, 0.774);
+  border-radius: 20px;
 }

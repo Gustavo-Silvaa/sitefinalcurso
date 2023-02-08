@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./Css/Container.css";
+import "./Css/Style.css";
 
 import Header from "./component/Header";
 import Nav from "./component/Nav";
@@ -10,8 +10,6 @@ import Footer from "./component/Footer";
 import Home from "./Pages/Home";
 import Comment from "./Pages/Comment";
 import About from "./Pages/About";
-
-import "./Css/Responsive.css";
 
 function App() {
   return (

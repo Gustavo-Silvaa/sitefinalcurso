@@ -1,9 +1,15 @@
 #container main {
-  height: 420px;
-  text-align: center;
+  grid-area: main;
+  margin: auto;
 }
 
-main img {
-  width: 400px;
-  margin-top: 20px;
+#container main #video {
+  background-color: rgb(161, 101, 218);
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+iframe {
+  height: 300px;
 }

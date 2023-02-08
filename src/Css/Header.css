@@ -1,6 +1,11 @@
 #container header {
-  padding: 8px;
+  grid-area: header;
   background-color: rgba(78, 36, 112, 0.637);
   text-align: center;
+  margin-top: 10px;
   border-radius: 10px;
+}
+
+#container header img {
+  padding: 5px;
 }

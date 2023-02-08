@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import "../Css/comment.css";
+import "../Css/Comment.css";
 
 const Comentarios = () => {
   const [inputs, setInputs] = useState([]);
@@ -38,10 +38,10 @@ const Comentarios = () => {
   useEffect(refreshList, []);
 
   return (
-    <main className="comentarios">
+    <main id="comentarios">
       <form onSubmit={handleSubmit}>
         <label htmlFor="nome">
-          <p>Nome</p>
+          <h4>Nome</h4>
           <input
             type="text"
             id="nome"
@@ -52,7 +52,7 @@ const Comentarios = () => {
         </label>
 
         <label htmlFor="email">
-          <p>E-mail</p>
+          <h4>E-mail</h4>
           <input
             type="email"
             id="email"
@@ -63,34 +63,34 @@ const Comentarios = () => {
         </label>
 
         <label htmlFor="comentario">
-          <p>Comentario</p>
-          <input
+          <h4>Comentario</h4>
+          <textarea
             type="text"
             id="comentario"
             name="comentario"
             value={inputs.comentario}
             onChange={handleChange}
-          />
+          ></textarea>
         </label>
-
+        <br />
         <input type="submit" value="Gravar" />
       </form>
 
       <table id="lista">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Comentario</th>
+            <th id="listname">Nome</th>
+            <th id="listemail">Email</th>
+            <th id="listcomment">Comentario</th>
           </tr>
         </thead>
 
         <tbody>
           {listRow.map((val) => (
             <tr>
-              <td>{val.nome}</td>
-              <td>{val.email}</td>
-              <td>{val.comentario}</td>
+              <td id="listname">{val.nome}</td>
+              <td id="listemail">{val.email}</td>
+              <td id="listcomment">{val.comentario}</td>
             </tr>
           ))}
         </tbody>
