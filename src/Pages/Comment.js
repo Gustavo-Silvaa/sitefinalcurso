@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
-import "../Css/Comment.css";
+import "../Css/comment.css";
 
 const Comentarios = () => {
   const [inputs, setInputs] = useState([]);
@@ -15,15 +15,12 @@ const Comentarios = () => {
 
   const handleSubmit = (evento) => {
     evento.preventDefault();
-
     console.log(inputs);
-
     Axios.post("http://localhost:3001/add", {
       nome: inputs.nome,
       email: inputs.email,
       comentario: inputs.comentario,
     }).then(refreshList, []);
-
     setInputs((inputs.nome = ""));
     setInputs((inputs.email = ""));
     setInputs((inputs.comentario = ""));
@@ -76,7 +73,7 @@ const Comentarios = () => {
         <input type="submit" value="Gravar" />
       </form>
 
-      <table id="lista">
+      {/* <table id="lista">
         <thead>
           <tr>
             <th id="listname">Nome</th>
@@ -94,7 +91,27 @@ const Comentarios = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
+
+      <div id="lista">
+        <div>
+          <tr style={{ marginBottom: 15 }} className="tr">
+            <th id="listname">Nome</th>
+            <th id="listemail">Email</th>
+            <th id="listcomment">Comentario</th>
+          </tr>
+        </div>
+
+        <div>
+          {listRow.map((val) => (
+            <tr className="tr">
+              <td id="listname">{val.nome}</td>
+              <td id="listemail">{val.email}</td>
+              <td id="listcomment">{val.comentario}</td>
+            </tr>
+          ))}
+        </div>
+      </div>
     </main>
   );
 };
