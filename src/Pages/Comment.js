@@ -73,26 +73,6 @@ const Comentarios = () => {
         <input type="submit" value="Gravar" />
       </form>
 
-      {/* <table id="lista">
-        <thead>
-          <tr>
-            <th id="listname">Nome</th>
-            <th id="listemail">Email</th>
-            <th id="listcomment">Comentario</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          {listRow.map((val) => (
-            <tr>
-              <td id="listname">{val.nome}</td>
-              <td id="listemail">{val.email}</td>
-              <td id="listcomment">{val.comentario}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table> */}
-
       <div id="lista">
         <div>
           <tr style={{ marginBottom: 15 }} className="tr">
